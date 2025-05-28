@@ -1,6 +1,6 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Sidebar from './components/Sidebar';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Sidebar from './components/Slidebar/Sidebar';
 import Home from './pages/Home';
 
 function App() {
@@ -10,7 +10,9 @@ function App() {
       <Sidebar />
       <div className="MainContent">
         <Routes>
-        <Route path="/home" element={<Home />} />
+          {/* ✅ デフォルトで `/home` にリダイレクト */}
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </div>
       
