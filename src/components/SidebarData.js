@@ -21,7 +21,7 @@ export const SidebarData = [
     {
         title: "アナリティクス",
         icon: <EqualizerIcon />,
-        link: "/analitics",
+        link: "/analytics",
     },
     {
         title: "友達追加",
