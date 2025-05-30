@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import PomodoroTimer from '../components/PomodoroTimer/PomodoroTimer';
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
           <p>さらに詳しい情報はこちらに追加できます。</p>
         </div>
       </section>
+      <PomodoroTimer />
     </div>
   );
 }
