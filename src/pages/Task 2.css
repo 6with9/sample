@@ -1,0 +1,73 @@
+.TaskPage {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+.TaskHeader {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0 8px 0;
+}
+.TaskHeader button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.TaskHeader button.active {
+  background: #3b627a;
+  color: #fff;
+}
+.TaskList {
+  padding: 0 16px;
+}
+.TaskItem {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1.5px solid #d0d0d0; /* 枠線を追加 */
+  border-radius: 10px;          /* 角丸 */
+  margin-bottom: 12px;          /* タスク間の余白 */
+  padding: 14px 16px;           /* 内側の余白 */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* ほんのり影 */
+  transition: box-shadow 0.2s;
+}
+.TaskItem:active, .TaskItem:focus-within {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+.TaskTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.TaskMeta {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 4px;
+  display: flex;
+  gap: 12px;
+}
+.TaskSubtasks {
+  margin: 8px 0 0 16px;
+  font-size: 0.95rem;
+  color: #444;
+}
+.TaskAddFab {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #3b627a;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  z-index: 1000;
+}
