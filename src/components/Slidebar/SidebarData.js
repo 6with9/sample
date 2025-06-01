@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeIcon from '@mui/icons-material/Home';
+import TaskIcon from '@mui/icons-material/Task';
 import EmailIcon from '@mui/icons-material/Email';
 import EqualizerIcon from '@mui/icons-material/Equalizer';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
@@ -12,6 +13,11 @@ export const SidebarData = [
         title: "ホーム",
         icon: <HomeIcon />,
         link: "/home",
+    },
+    {
+        title: "タスク",
+        icon: <TaskIcon/>,
+        link: "/task",
     },
     {
         title: "メール",

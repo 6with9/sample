@@ -2,6 +2,7 @@
   position: relative;
   min-height: 100vh;
   padding-bottom: 80px;
+  padding-top: 20px;
 }
 .TaskHeader {
   display: flex;
