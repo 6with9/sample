@@ -45,6 +45,7 @@ function TaskItem({ task, onDelete }) {
     },
     trackMouse: true,
     preventDefaultTouchmoveEvent: true,
+    preventScrollOnSwipe: true, // ← この行を追加
   });
 
   return (

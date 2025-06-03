@@ -4,7 +4,7 @@ import PomodoroTimer from '../components/PomodoroTimer/PomodoroTimer';
 
 function Home() {
   return (
-    <div className="Home">
+    <div className="HomePageBg">
       <header className="Home-header">
         <h1>ホームページ</h1>
         <p>ようこそ！ここではさまざまな情報を提供します。</p>

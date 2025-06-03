@@ -14,3 +14,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ページ全体の高さを確保 */
+html, body, #root {
+  height: 100%;
+}
+
+/* 背景画像をbody全体に適用 */
+body {
+  background: url('./pages/images/home.jpg') center center / cover no-repeat;
+  min-height: 100vh;
+}

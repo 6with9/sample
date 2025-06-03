@@ -70,18 +70,29 @@
 }
 
 .MenuButton {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  width: 40px;
-  height: 40px;
-  background-color: #3b627a;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #3b627a;        /* 以前使用していた配色 */
+  border: none;
+  box-shadow: none;
   cursor: pointer;
-  border-radius: 10px;
+  padding: 0;
+  margin: 8px;
+  border-radius: 12px;        /* 角丸の正方形 */
+  transition: background 0.2sox-shadow 0.2s;
+}
+
+.MenuButton svg {
+  color: #fff;
+}
+
+/* ホバー時の色は維持 */
+.MenuButton:hover {
+  background: #27465c;        /* 濃いめの配色に */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .Sidebar.open {
@@ -158,4 +169,23 @@
     left: 0;
     width: 100vw;
   }
+}
+
+.SidebarMenuButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 8px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.SidebarMenuButton:hover {
+  background: rgba(60, 98, 122, 0.1);
 }

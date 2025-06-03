@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Sidebar from './components/Slidebar/Sidebar';
 import Home from './pages/Home';
 import Task from './pages/Task';
+import Settings from './pages/Settings'; // ファイル名と一致しているか確認
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/task" element={<Task />} />
+            <Route path="/settings" element={<Settings />} />
             {/* 他のページもここに追加できます */}
             {/* <Route path="/mail" element={<Mail />} /> */}
             {/* <Route path="/analytics" element={<Analytics />} /> */}
